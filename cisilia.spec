@@ -8,6 +8,7 @@ License:	GNU GPL version 2
 URL:		http://www.cisiar.org
 Group:		Applications/System
 Source0:	http://www.cisiar.org/proyectos/cisilia/files/versiones/tar/%{name}-%{version}.tar.gz
+# Source0-md5:	c36824988a86da60b01081a8b3082699
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
