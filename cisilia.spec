@@ -4,11 +4,11 @@ Summary(es):	Un sistema escalable de obtención de contraseñas en paralelo
 Name:		cisilia
 Version:	0.7.3
 Release:	1
-License:	GNU GPL version 2
+License:	GPL v2+
 Group:		Applications/System
 Source0:	http://www.cisiar.org/proyectos/cisilia/files/versiones/tar/%{name}-%{version}.tar.gz
 # Source0-md5:	c36824988a86da60b01081a8b3082699
-URL:		http://www.cisiar.org
+URL:		http://www.cisiar.org/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -71,11 +71,12 @@ puede incrementar la velocidad total de procesamiento.
 %build
 %configure
 
-%{__make}
+%{__make} \
+	CFLAGS="%{rpmcflags} -Wall"
 
 %install
-
 rm -rf $RPM_BUILD_ROOT
+
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
@@ -86,7 +87,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files -f %{name}.lang
 %defattr(644,root,root,755)
+%doc AUTHORS ChangeLog
 %attr(755,root,root) %{_bindir}/%{name}
 %{_includedir}/%{name}
 %{_mandir}/man1/%{name}.*
-%doc %{_prefix}/doc/%{name}
