@@ -27,6 +27,8 @@ If %{name} is executed on a load-balancing cluster, the child
 processes are migrated to the other nodes increasing the computational
 speed.
 
+Works with Mosix and openMosix.
+
 %description -l pl
 %{name} to skalowalny multiprocesorowy system ³amania hase³. Bierz±ca
 wersja - %{name} (%{version}), odtwarza has³a Windows NT/2000/XP i
@@ -40,6 +42,8 @@ pomiedzy podprocesy i wtedy tworzy "n" procesow dzieci.
 Je¿eli %{name} jest wykonywany na load-balancing cluster, procesy
 potomne migruj± na inne wêz³y zwiêkszaj± w ten sposób szybko¶æ
 ³amania.
+
+Wspó³pracuje z Mosix'em i openMosix'em.
 
 %description -l es
 %{name} es un sistema escalable de obtención de contraseñas en
