@@ -3,7 +3,7 @@ Summary(pl):	Równoleg³y wieloprocesowy system ³amania hase³
 Summary(es):	Un sistema escalable de obtención de contraseñas en paralelo
 Name:		cisilia
 Version:	0.7.3
-Release:	0.1
+Release:	1
 License:	GNU GPL version 2
 URL:		http://www.cisiar.org
 Group:		Applications/System
@@ -75,7 +75,7 @@ puede incrementar la velocidad total de procesamiento.
 %install
 
 rm -rf $RPM_BUILD_ROOT
-%{__make} DESTDIR=RPM_BUILD_ROOT install
+%{__make} DESTDIR=$RPM_BUILD_ROOT install
 
 %find_lang %{name}
 
