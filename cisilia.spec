@@ -5,10 +5,10 @@ Name:		cisilia
 Version:	0.7.3
 Release:	1
 License:	GNU GPL version 2
-URL:		http://www.cisiar.org
 Group:		Applications/System
 Source0:	http://www.cisiar.org/proyectos/cisilia/files/versiones/tar/%{name}-%{version}.tar.gz
 # Source0-md5:	c36824988a86da60b01081a8b3082699
+URL:		http://www.cisiar.org
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -76,7 +76,8 @@ puede incrementar la velocidad total de procesamiento.
 %install
 
 rm -rf $RPM_BUILD_ROOT
-%{__make} DESTDIR=$RPM_BUILD_ROOT install
+%{__make} install \
+	DESTDIR=$RPM_BUILD_ROOT
 
 %find_lang %{name}
 
