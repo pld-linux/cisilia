@@ -1,5 +1,5 @@
 Summary:	A parallel multiprocess password cracking system
-Summary(pl):	Równoleg³y wieloprocesorowy system ³amania hase³
+Summary(pl):	Równoleg³y wieloprocesowy system ³amania hase³
 Summary(es):	Un sistema escalable de obtención de contraseñas en paralelo
 Name:		cisilia
 Version:	0.7.3
@@ -30,20 +30,24 @@ speed.
 Works with Mosix and openMosix.
 
 %description -l pl
-%{name} to skalowalny multiprocesorowy system ³amania hase³. Bierz±ca
-wersja - %{name} (%{version}), odtwarza has³a Windows NT/2000/XP i
-Samba user zaszyfrowane algorytmem DES/MD4.
+%{name} to skalowalny wieloprocesowy system ³amania hase³. Bie¿±ca
+wersja - %{name} (%{version}), odtwarza has³a kont u¿ytkowników
+Windows NT/2000/XP i Samby zaszyfrowane algorytmem DES/MD4.
 
-I dlatego jest zaprojektowany jako system równoleglych wielu procesow,
-z mozliwoscia pracy wieloprocesorowej (SMP) oraz rozlozeniem
-obciazenia w systemach clustrowych. %{name} dzieli zakresy hasla
-pomiedzy podprocesy i wtedy tworzy "n" procesow dzieci.
+Pomimo, ¿e %{name} zawiera s³ownikowy schemat odtwarzania hase³,
+g³ównym celem tego systemu jest przeprowadzanie ataków
+"parallel-brute-force".
 
-Je¿eli %{name} jest wykonywany na load-balancing cluster, procesy
-potomne migruj± na inne wêz³y zwiêkszaj± w ten sposób szybko¶æ
+W³a¶nie dlatego jest zaprojektowany jako system wielu równoleg³ych
+procesów, z mo¿liwo¶ci± pracy wieloprocesorowej (SMP) oraz roz³o¿eniem
+obci±¿enia w systemach klastrowych. %{name} dzieli zakresy has³a
+pomiêdzy podprocesy i wtedy tworzy "n" procesów potomnych.
+
+Je¿eli %{name} jest wykonywany na klastrze rozk³adaj±cym obci±¿enie,
+procesy potomne migruj± na inne wêz³y zwiêkszaj± w ten sposób szybko¶æ
 ³amania.
 
-Wspó³pracuje z Mosix'em i openMosix'em.
+Wspó³pracuje z Mosiksem i openMosiksem.
 
 %description -l es
 %{name} es un sistema escalable de obtención de contraseñas en
@@ -80,9 +84,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files -f %{name}.lang
 %defattr(644,root,root,755)
-
-%defattr(-,root,root)
 %attr(755,root,root) %{_bindir}/%{name}
-%{_includedir}/%{name}/*
+%{_includedir}/%{name}
 %{_mandir}/man1/%{name}.*
-%doc %{_prefix}/doc/%{name}/*
+%doc %{_prefix}/doc/%{name}
