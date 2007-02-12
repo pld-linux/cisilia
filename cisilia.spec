@@ -1,6 +1,6 @@
 Summary:	A parallel multiprocess password cracking system
-Summary(pl):	RÛwnoleg≥y wieloprocesowy system ≥amania hase≥
-Summary(es):	Un sistema escalable de obtenciÛn de contraseÒas en paralelo
+Summary(pl.UTF-8):   R√≥wnoleg≈Çy wieloprocesowy system ≈Çamania hase≈Ç
+Summary(es.UTF-8):   Un sistema escalable de obtenci√≥n de contrase√±as en paralelo
 Name:		cisilia
 Version:	0.7.3
 Release:	1
@@ -30,38 +30,38 @@ speed.
 
 Works with Mosix and openMosix.
 
-%description -l pl
-%{name} to skalowalny wieloprocesowy system ≥amania hase≥. Bieø±ca
-wersja - %{name} (%{version}), odtwarza has≥a kont uøytkownikÛw
+%description -l pl.UTF-8
+%{name} to skalowalny wieloprocesowy system ≈Çamania hase≈Ç. Bie≈ºƒÖca
+wersja - %{name} (%{version}), odtwarza has≈Ça kont u≈ºytkownik√≥w
 Windows NT/2000/XP i Samby zaszyfrowane algorytmem DES/MD4.
 
-Pomimo, øe %{name} zawiera s≥ownikowy schemat odtwarzania hase≥,
-g≥Ûwnym celem tego systemu jest przeprowadzanie atakÛw
+Pomimo, ≈ºe %{name} zawiera s≈Çownikowy schemat odtwarzania hase≈Ç,
+g≈Ç√≥wnym celem tego systemu jest przeprowadzanie atak√≥w
 "parallel-brute-force".
 
-W≥a∂nie dlatego jest zaprojektowany jako system wielu rÛwnoleg≥ych
-procesÛw, z moøliwo∂ci± pracy wieloprocesorowej (SMP) oraz roz≥oøeniem
-obci±øenia w systemach klastrowych. %{name} dzieli zakresy has≥a
-pomiÍdzy podprocesy i wtedy tworzy "n" procesÛw potomnych.
+W≈Ça≈õnie dlatego jest zaprojektowany jako system wielu r√≥wnoleg≈Çych
+proces√≥w, z mo≈ºliwo≈õciƒÖ pracy wieloprocesorowej (SMP) oraz roz≈Ço≈ºeniem
+obciƒÖ≈ºenia w systemach klastrowych. %{name} dzieli zakresy has≈Ça
+pomiƒôdzy podprocesy i wtedy tworzy "n" proces√≥w potomnych.
 
-Jeøeli %{name} jest wykonywany na klastrze rozk≥adaj±cym obci±øenie,
-procesy potomne migruj± na inne wÍz≥y zwiÍkszaj± w ten sposÛb szybko∂Ê
-≥amania.
+Je≈ºeli %{name} jest wykonywany na klastrze rozk≈ÇadajƒÖcym obciƒÖ≈ºenie,
+procesy potomne migrujƒÖ na inne wƒôz≈Çy zwiƒôkszajƒÖ w ten spos√≥b szybko≈õƒá
+≈Çamania.
 
-WspÛ≥pracuje z Mosiksem i openMosiksem.
+Wsp√≥≈Çpracuje z Mosiksem i openMosiksem.
 
-%description -l es
-%{name} es un sistema escalable de obtenciÛn de contraseÒas en
-paralelo. La versiÛn actual de %{name} (%{version}) obtiene
-contraseÒas de sistemas Windows NT/2000/XP y de Samba mediante el
-c·lculo de hashes DES/MD4.
+%description -l es.UTF-8
+%{name} es un sistema escalable de obtenci√≥n de contrase√±as en
+paralelo. La versi√≥n actual de %{name} (%{version}) obtiene
+contrase√±as de sistemas Windows NT/2000/XP y de Samba mediante el
+c√°lculo de hashes DES/MD4.
 
-Si bien %{name} incluye un esquema de obtenciÛn de contraseÒas
+Si bien %{name} incluye un esquema de obtenci√≥n de contrase√±as
 mediante diccionario, la meta principal del sistema es realizar
 ataques de fuerza bruta en paralelo.
 
 %{name} puede correr en sistemas multiprocesadores (SMP) o en
-"clusters" de balanceo de carga, ya que los rangos de contraseÒas se
+"clusters" de balanceo de carga, ya que los rangos de contrase√±as se
 pueden distribuir y migrar entre "n" subprocesos. De esta manera se
 puede incrementar la velocidad total de procesamiento.
 
