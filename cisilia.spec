@@ -1,6 +1,6 @@
 Summary:	A parallel multiprocess password cracking system
-Summary(pl.UTF-8):   Równoległy wieloprocesowy system łamania haseł
-Summary(es.UTF-8):   Un sistema escalable de obtención de contraseñas en paralelo
+Summary(pl.UTF-8):	Równoległy wieloprocesowy system łamania haseł
+Summary(es.UTF-8):	Un sistema escalable de obtención de contraseñas en paralelo
 Name:		cisilia
 Version:	0.7.3
 Release:	1
